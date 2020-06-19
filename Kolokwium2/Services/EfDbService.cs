@@ -28,7 +28,7 @@ namespace Kolokwium2.Services {
                     e.Name,
                     e.StartDate,
                     e.EndDate
-                }).ToList()
+                }).OrderByDescending(e => e.StartDate).ToList() // i really forgot at first about sort
             };
         }
 
